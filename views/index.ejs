@@ -1,0 +1,54 @@
+<%- include('header'); -%>
+
+<div class="city-disp">
+  <h1><%= location.district %> , <%= location.state %></h1>
+</div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="case-card hide">
+          <div class="card-decor decor-active"></div>
+          <div class="card-cont">
+            <h2 class="case-count"><%= cityStats.active %></h2>
+            <h5 class="case-type">ACTIVE</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="case-card hide">
+          <div class="card-decor"></div>
+          <div class="card-cont">
+            <h2 class="case-count"><%= cityStats.confirmed %></h2>
+            <h5 class="case-type">CONFIRMED</h5>
+            <p class="delta"><i class="fas fa-arrow-up"></i> <%= cityStats.confDel %> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="case-card hide">
+          <div class="card-decor"></div>
+          <div class="card-cont">
+            <h2 class="case-count"><%= cityStats.deceased %></h2>
+            <h5 class="case-type">DECEASED</h5>
+            <p class="delta"><i class="fas fa-arrow-up"></i> <%= cityStats.decDel %> </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="case-card hide">
+          <div class="card-decor decor-recover"></div>
+          <div class="card-cont">
+            <h2 class="case-count"><%= cityStats.recovered %></h2>
+            <h5 class="case-type ">RECOVERED</h5>
+            <p class="delta delta-recover"><i class="fas fa-arrow-up"></i> <%= cityStats.recDel %> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<%- include('footer'); -%>

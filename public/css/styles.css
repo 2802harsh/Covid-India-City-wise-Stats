@@ -1,0 +1,92 @@
+body{
+  margin: 2%;
+  background-color: hsl(232, 19%, 15%);
+  color:hsl(0, 0%, 100%);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heading{
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.title{
+  text-align: center;
+}
+p{
+  margin-top: 0;
+  font-weight: 700;
+  color:hsl(228, 34%, 66%);
+  font-size: 0.9rem;
+}
+.entry-section{
+  width:40%;
+  margin: 5% auto 0 auto;
+}
+
+.city-disp{
+  width: 50%;
+  margin:auto auto;
+  text-align: center;
+  border: solid rgba(255, 255, 255, 0.3) 1px;
+  padding: 2% 3% 1%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.city-disp h1{
+  font-size: 1.5rem;
+  color: #ffc107 ;
+}
+
+.case-card{
+  background-color: hsl(228, 28%, 20%);
+  padding:0;
+  width:70%;
+  margin: 2% auto;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.card-decor{
+  width:100%;
+  height:5px;
+  background-color: hsl(356, 69%, 56%);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.card-cont{
+  padding:10% 10%;
+  color:hsl(210, 25%, 60%);
+  text-align: center;
+}
+.case-type, .case-count{
+  font-weight: 700;
+}
+.case-count{
+  margin-bottom: 5%;
+  color:hsl(0, 0%, 100%);
+}
+.delta{
+  color: hsl(356, 69%, 56%);
+  margin: 5% 0 0;
+}
+.decor-active{
+  background: -webkit-linear-gradient(45deg , hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
+}
+.decor-recover{
+  background-color: hsl(208, 92%, 53%);
+  font-size: 1.25rem;
+}
+.delta-recover{
+  color:hsl(163, 72%, 41%);
+}
+
+footer{
+  text-align: center;
+  margin: 5% 0 0;
+  font-size: 0.9rem;
+  color: #fff;
+  border-top: solid hsl(37, 97%, 70%) 1px;
+  padding-top: 2%;
+}
+footer a{
+  color:  hsl(37, 97%, 70%);
+}
