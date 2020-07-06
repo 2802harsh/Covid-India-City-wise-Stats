@@ -32,6 +32,12 @@ var location = {
 app.get("/", function (req, res) {
   location.date = date.getDate();
   res.render("index", {location:location, cityStats: cityData});
+
+        // If user refreshes site after this, initial message shows up rather than the previous looked up search
+
+        location.state="Select State and District First";
+        location.district="No Data to Show";
+        cityData = {confirmed:0, active:0, deceased: 0, recovered:0, confDel:0, decDel: 0, recDel: 0};
 });
 
 app.post("/", function (req, res) {
