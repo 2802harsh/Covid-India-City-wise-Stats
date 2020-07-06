@@ -90,3 +90,9 @@ footer{
 footer a{
   color:  hsl(37, 97%, 70%);
 }
+
+@media(max-width: 992px){
+  html{
+    font-size: 25px;
+  }
+}
