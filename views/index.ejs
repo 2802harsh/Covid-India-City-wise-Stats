@@ -1,4 +1,24 @@
 <%- include('header'); -%>
+<div class="entry-section">
+  <form class="form" action="/" method="post">
+    <div class="form-group">
+      <label for="state-id">State</label>
+      <select class="form-control" name="state" id="state-id">
+        <option selected="selected"> Select State</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="district-id">District</label>
+      <select class="form-control" name="district" id="district-id">
+        <option selected="selected"> Select District</option>
+      </select>
+    </div>
+    <button class="btn btn-outline-warning" type="submit" name="button" id="button">Submit</button>
+  </form>
+</div>
+
+<br><br>
 
 <div class="city-disp">
   <h1><%= location.district %> , <%= location.state %></h1>
